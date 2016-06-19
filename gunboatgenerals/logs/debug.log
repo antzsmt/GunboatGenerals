@@ -1,0 +1,221 @@
+Sat, Jun 18 05:25:33 app.py:31 INFO:UTC
+Sat, Jun 18 05:25:33 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 32, in add_numbers
+    return jsonify(a)
+  File "/usr/local/lib/python2.7/dist-packages/flask/json.py", line 237, in jsonify
+    return current_app.response_class(dumps(dict(*args, **kwargs),
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Sat, Jun 18 05:25:34 app.py:31 INFO:UTC
+Sat, Jun 18 05:25:34 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 32, in add_numbers
+    return jsonify(a)
+  File "/usr/local/lib/python2.7/dist-packages/flask/json.py", line 237, in jsonify
+    return current_app.response_class(dumps(dict(*args, **kwargs),
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Sat, Jun 18 05:26:53 glogging.py:137 INFO:Worker exiting (pid: 32590)
+Sat, Jun 18 05:27:02 app.py:31 INFO:UTC
+Sat, Jun 18 05:28:31 app.py:31 INFO:aoeu
+Sat, Jun 18 05:28:53 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 05:29:19 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 05:30:06 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 05:31:21 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 05:31:38 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 18:10:18 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 18:52:19 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 20:05:55 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 20:07:48 app.py:31 INFO:"America/New_York"
+Sat, Jun 18 20:11:25 glogging.py:137 INFO:Worker exiting (pid: 32613)
+Sat, Jun 18 20:14:40 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 146, in add_numbers
+    start,end = startEnd(tz)
+  File "/home/www/flask_project/app.py", line 112, in startEnd
+    nowTZ = datetime.now(tz)
+TypeError: tzinfo argument must be None or of a tzinfo subclass, not type 'str'
+Sat, Jun 18 20:14:53 glogging.py:137 INFO:Worker exiting (pid: 14079)
+Sat, Jun 18 20:16:09 glogging.py:137 INFO:Worker exiting (pid: 14094)
+Sat, Jun 18 20:16:15 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 146, in add_numbers
+    start,end = startEnd(tz)
+  File "/home/www/flask_project/app.py", line 112, in startEnd
+    nowTZ = datetime.now(tz)
+TypeError: tzinfo argument must be None or of a tzinfo subclass, not type 'str'
+Sat, Jun 18 20:16:19 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 146, in add_numbers
+    start,end = startEnd(tz)
+  File "/home/www/flask_project/app.py", line 112, in startEnd
+    nowTZ = datetime.now(tz)
+TypeError: tzinfo argument must be None or of a tzinfo subclass, not type 'str'
+Sat, Jun 18 20:17:12 glogging.py:137 INFO:Worker exiting (pid: 14128)
+Sat, Jun 18 20:17:37 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 146, in add_numbers
+    tz = pytz.timezone(tz)
+  File "/usr/local/lib/python2.7/dist-packages/pytz/__init__.py", line 180, in timezone
+    raise UnknownTimeZoneError(zone)
+UnknownTimeZoneError: '"America/New_York"'
+Sat, Jun 18 20:17:50 glogging.py:137 INFO:Worker exiting (pid: 14168)
+Sat, Jun 18 20:18:23 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 146, in add_numbers
+    tz = pytz.timezone(tz.replace('"',''))
+  File "/usr/local/lib/python2.7/dist-packages/pytz/__init__.py", line 180, in timezone
+    raise UnknownTimeZoneError(zone)
+UnknownTimeZoneError: '"America/New_York"'
+Sat, Jun 18 20:18:46 glogging.py:137 INFO:Worker exiting (pid: 14182)
+Sat, Jun 18 20:18:51 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 151, in add_numbers
+    return jsonify(result=sch + message)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+Sat, Jun 18 20:19:18 glogging.py:137 INFO:Worker exiting (pid: 14201)
+Sat, Jun 18 20:20:51 glogging.py:137 INFO:Worker exiting (pid: 14233)
+Sat, Jun 18 20:20:56 app.py:1423 ERROR:Exception on /_add_numbers [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/www/flask_project/app.py", line 151, in add_numbers
+    sch = schedule(tz)
+  File "/home/www/flask_project/app.py", line 106, in schedule
+    ans+= day+'\n'
+TypeError: unsupported operand type(s) for +: 'instance' and 'str'
+Sat, Jun 18 20:21:14 glogging.py:137 INFO:Worker exiting (pid: 14252)
+Sat, Jun 18 20:21:56 glogging.py:137 INFO:Worker exiting (pid: 14276)
+Sat, Jun 18 20:28:34 glogging.py:137 INFO:Worker exiting (pid: 14290)
+Sat, Jun 18 20:28:57 glogging.py:137 INFO:Worker exiting (pid: 14396)
+Sat, Jun 18 20:29:46 glogging.py:137 INFO:Worker exiting (pid: 14413)
+Sat, Jun 18 20:31:08 glogging.py:137 INFO:Worker exiting (pid: 14431)
+Sat, Jun 18 20:32:18 glogging.py:137 INFO:Worker exiting (pid: 14470)
+Sat, Jun 18 20:38:29 glogging.py:137 INFO:Worker exiting (pid: 14500)
+Sat, Jun 18 20:38:57 glogging.py:137 INFO:Worker exiting (pid: 14592)
+Sat, Jun 18 20:39:40 glogging.py:137 INFO:Worker exiting (pid: 14607)
+Sat, Jun 18 20:42:18 glogging.py:137 INFO:Worker exiting (pid: 14629)
+Sat, Jun 18 20:42:45 glogging.py:137 INFO:Worker exiting (pid: 14675)
+Sat, Jun 18 20:43:47 glogging.py:137 INFO:Worker exiting (pid: 14684)
+Sat, Jun 18 20:44:24 glogging.py:137 INFO:Worker exiting (pid: 14712)
+Sat, Jun 18 20:44:49 glogging.py:137 INFO:Worker exiting (pid: 14731)
+Sat, Jun 18 20:52:48 glogging.py:137 INFO:Worker exiting (pid: 14747)
+Sat, Jun 18 20:53:03 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Sour Grapes  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Mambo  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:53:05 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Sour Grapes  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Mambo  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:53:51 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Sour Grapes  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Mambo  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:54:05 glogging.py:137 INFO:Worker exiting (pid: 14890)
+Sat, Jun 18 20:54:14 app.py:154 INFO:UTC<br />Ops start between 11PM and 3AM (UTC) every day as soon as intel allows. If we can't start by 3AM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Sour Grapes  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Mambo  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:54:56 glogging.py:137 INFO:Worker exiting (pid: 14917)
+Sat, Jun 18 20:55:04 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Powder Keg  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Sour Grapes  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Mambo  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:58:04 glogging.py:137 INFO:Worker exiting (pid: 14940)
+Sat, Jun 18 20:58:11 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 20:59:20 glogging.py:137 INFO:Worker exiting (pid: 14996)
+Sat, Jun 18 21:00:03 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:09:21 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:13:07 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:18:34 app.py:153 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:20:57 glogging.py:137 INFO:Worker exiting (pid: 15028)
+Sat, Jun 18 21:22:41 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:25:47 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Friday, June 17  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr></table>
+Sat, Jun 18 21:26:12 glogging.py:137 INFO:Worker exiting (pid: 15380)
+Sat, Jun 18 21:26:18 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 21:46:03 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 22:00:38 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 22:43:48 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 22:51:44 app.py:157 INFO:Australia/Sydney<br />Ops start between 9AM and 1PM (Australia/Sydney) every day as soon as intel allows. If we can't start by 1PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Friday, June 24  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr></table>
+Sat, Jun 18 23:07:00 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 23:07:23 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sat, Jun 18 23:07:32 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sun, Jun 19 02:15:33 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sun, Jun 19 02:44:56 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sun, Jun 19 03:22:58 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sun, Jun 19 03:36:00 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Saturday, June 18  </td><td>  Mambo  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr></table>
+Sun, Jun 19 04:12:02 app.py:157 INFO:America/New_York<br />Ops start between 7PM and 11PM (America/New_York) every day as soon as intel allows. If we can't start by 11PM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Friday, June 24  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr></table>
+Sun, Jun 19 04:50:21 app.py:157 INFO:UTC<br />Ops start between 1PM and 3AM (UTC) every day as soon as intel allows. If we can't start by 3AM, we skip the day completely.<br /><br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr><tr><td>Sunday, June 19  </td><td>  Mambo  </td><td>  no boost  </td><td>  War Factory</td></tr><tr><td>Monday, June 20  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Tuesday, June 21  </td><td>  Bottleneck  </td><td>  BOOST  </td><td>  Dr. T Volcano</td></tr><tr><td>Wednesday, June 22  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Hammerman</td></tr><tr><td>Thursday, June 23  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Tropical</td></tr><tr><td>Friday, June 24  </td><td>  Sour Grapes  </td><td>  no boost  </td><td>  Dr. T Volcano</td></tr></table>
