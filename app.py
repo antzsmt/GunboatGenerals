@@ -1,7 +1,6 @@
 from flask import request,Flask, jsonify, Response, send_from_directory
 import logging
 
-reachOp = 13
 weekdays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
 events = ['Dr. T Tropical',
@@ -66,11 +65,11 @@ def dayEvent(day, startDate):
   todaysEvent = (originEvent + numDays) % 6
   return todaysEvent
   
-def whichOp(days, currentDate, event):
+def whichOp(days, currentDate, event, reachOp):
   weekday = currentDate.weekday()
-  if weekday in [5,6]:
+  if weekday in [4,5,6]:
     return reachOp - 2
-  if weekday in [4,0]:
+  if weekday in [0]:
     return reachOp -1
   if weekday in [1,2,3]:
     j = 0
@@ -87,7 +86,7 @@ def whichOp(days, currentDate, event):
       return reachOp
     return reachOp -1
 
-def schedule(tz):
+def schedule(tz, reachOp):
   scheduleLen = 7
   td = today(tz) - timedelta(days=2) #+ timedelta(days=5)
   startDate = tz.localize(datetime.strptime(originDate, '%B %d, %Y'), is_dst=None)
@@ -97,9 +96,10 @@ def schedule(tz):
   days = [sd]
   while currentDate <= lastDate:
     event = dayEvent(currentDate, startDate)
-    op = whichOp(days, currentDate, event)
+    op = whichOp(days, currentDate, event, reachOp)
     days.append(Day(currentDate, event, op, op==reachOp))
     currentDate += timedelta(days=1)
+  print days
   days = days[1-scheduleLen:]
   ans = '<br /><table style="width:100%;"><tr><th>Day</th><th>Suggested Op</th><th>Boost?</th><th>Event</th></tr>'
   for day in days:
@@ -144,15 +144,17 @@ def index():
 
 @app.route('/_add_numbers')
 def add_numbers():
-    tzz = request.args.get('tzz', 'UTC', type=str)
     tz = pytz.timezone('UTC')
+    reachOp = 13
     try:
+      reachOp = request.args.get('reach', 13, type=int)
+      tzz = request.args.get('tzz', 'UTC', type=str)
       tz = pytz.timezone(tzz.replace('"',''))
     except:
       pass
     start,end = startEnd(tz)
     message = '<br />Ops start between %s and %s (%s) every day as soon as intel allows. If we can\'t start by %s, we skip the day completely.<br />' % (start,end,tz, end)
-    sch = schedule(tz)
+    sch = schedule(tz,reachOp)
     loggg = str(tz) +  message + str(sch)
     logging.info(loggg)
     print loggg
@@ -183,4 +185,4 @@ def send(filename):
     return send_from_directory('/home/www/flask_project/static', filename)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=False)
